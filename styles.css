@@ -1,0 +1,38 @@
+.footer{
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #6c757d;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+    /* ensures footer doesn't cover content */
+    min-height: 60px;
+}
+
+/* prevent page content from being hidden behind the fixed footer */
+body {
+    margin: 0;
+    padding-bottom: 80px; /* slightly larger than footer min-height */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .footer{
+        padding: 12px;
+        font-size: 13px;
+        min-height: 56px;
+    }
+    body { padding-bottom: 72px; }
+}
+
+@media (min-width: 1200px) {
+    .footer{
+        padding: 24px 40px;
+        font-size: 15px;
+    }
+}
