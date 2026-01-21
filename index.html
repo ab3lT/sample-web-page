@@ -1,30 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadillac | Be Iconic</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    <header>
-        <h1>Welcome to My Web Page</h1>
-    </header>
-    <main>
-        <p>This is a sample web page to demonstrate HTML structure.</p>
-    </main>
-    <footer class="footer">
-        <p>&copy; 2026 My Web Page</p>
-    </footer>
+  <header class="header">
+    <nav class="header__nav">
+      <div class="header__left">
+        <button class="header__menu-btn" aria-label="Menu">
+          <span class="header__menu-icon"></span>
+          <span class="header__menu-icon"></span>
+          <span class="header__menu-icon"></span>
+        </button>
+        <div class="header__nav-links">
+          <a href="#" class="header__link">VEHICLES</a>
+          <a href="#" class="header__link">SHOP</a>
+        </div>
+      </div>
+      <a href="#" class="header__logo">
+        <img src="cadillac-logo 1.svg" alt="Cadillac Logo" class="header__logo-image">
+        
+      </a>
+      <button class="header__account-btn" aria-label="Account">
+        <svg class="header__account-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M4 20C4 16.6863 7.58172 14 12 14C16.4183 14 20 16.6863 20 20" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
 
+  <main class="main">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__background">
+        <img src="image (1).png" alt="Cadillac LYRIQ" class="hero__image">
+      </div>
+      <div class="hero__content">
+        <h1 class="hero__title">BE ICONIC</h1>
+        <a href="#" class="hero__cta">EXPLORE LINEUP <span class="hero__cta-arrow">→</span></a>
+      </div>
+    </section>
 
+    <!-- Featured Cards Section -->
+    <section class="featured">
+      <div class="featured__grid">
+        <a href="#" class="featured__card featured__card--lyriq">
+          <img src="Rectangle 4.png" alt="LYRIQ" class="featured__card-image">
+          <div class="featured__card-content">
+            <span class="featured__card-label">EXPLORE</span>
+            <h2 class="featured__card-title">LYRIQ</h2>
+          </div>
+        </a>
+        <a href="#" class="featured__card featured__card--surgeon">
+          <img src="Rectangle 5.png" alt="Surgeon x Cadillac" class="featured__card-image">
+          <div class="featured__card-content">
+            <span class="featured__card-label">PRESENTING</span>
+            <h2 class="featured__card-title">SURGEON X CADILLAC<br>AND 2024 US OPEN</h2>
+          </div>
+        </a>
+        <a href="#" class="featured__card featured__card--racing">
+          <img src="Rectangle 6.png" alt="Cadillac Racing" class="featured__card-image">
+          <div class="featured__card-content">
+            <span class="featured__card-label">DISCOVER</span>
+            <h2 class="featured__card-title">CADILLAC RACING</h2>
+          </div>
+        </a>
+      </div>
+    </section>
 
+    <!-- Current Offers Section -->
+    <section class="offers">
+      <h2 class="offers__title">CURRENT OFFERS</h2>
+      <nav class="offers__nav">
+        <a href="#" class="offers__nav-link offers__nav-link--active">LYRIQ</a>
+        <a href="#" class="offers__nav-link">ESCALADE</a>
+        <a href="#" class="offers__nav-link">XT6</a>
+        <a href="#" class="offers__nav-link">XT5</a>
+        <a href="#" class="offers__nav-link">XT4</a>
+        <a href="#" class="offers__nav-link">XT4</a>
+      </nav>
+      <div class="offers__card">
+        <span class="offers__card-year">2024</span>
+        <h3 class="offers__card-model">LYRIQ AWD TECH</h3>
+        <p class="offers__card-subtitle">ULTRA-LOW MILEAGE LEASE FOR WELL-QUALIFIED LESSEES</p>
+        <div class="offers__card-pricing">
+          <div class="offers__card-price">
+            <span class="offers__card-amount">$479</span>
+            <span class="offers__card-term">PER MONTH*</span>
+          </div>
+          <div class="offers__card-duration">
+            <span class="offers__card-months">24</span>
+            <span class="offers__card-term">MONTHS</span>
+          </div>
+        </div>
+        <p class="offers__card-due">$3,999 due at signing after all offers</p>
+        <p class="offers__card-disclaimer">Security deposit required. Tax, title, license, and dealer fees extra. Mileage charge of $.25/mile over 20,000 miles. Lessee pays for maintenance, excess wear and excess mileage.</p>
+        <a href="#" class="offers__card-link">SEARCH INVENTORY</a>
+      </div>
+    </section>
+
+    <!-- Lineup Section -->
+    <section class="lineup">
+      <h2 class="lineup__title">EXPLORE THE CADILLAC LINEUP</h2>
+      <nav class="lineup__tabs">
+        <button class="lineup__tab lineup__tab--active">SUVS</button>
+        <button class="lineup__tab">SEDANS</button>
+        <button class="lineup__tab">ELECTRIC</button>
+        <button class="lineup__tab">V-SERIES</button>
+      </nav>
+      <div class="lineup__grid">
+        <article class="lineup__vehicle">
+          <div class="lineup__vehicle-image-wrap">
+            <img src="ESCALAE_IQ.png" alt="2026 Escalade IQ" class="lineup__vehicle-image">
+          </div>
+          <span class="lineup__vehicle-year">2026</span>
+          <h3 class="lineup__vehicle-name">ESCALADE IQ</h3>
+          <p class="lineup__vehicle-price">FROM $130,490*</p>
+          <a href="#" class="lineup__vehicle-link">EXPLORE →</a>
+        </article>
+        <article class="lineup__vehicle">
+          <div class="lineup__vehicle-image-wrap">
+            <img src="ESCALADE_2.png" alt="2025 Escalade" class="lineup__vehicle-image">
+          </div>
+          <span class="lineup__vehicle-year">2025</span>
+          <h3 class="lineup__vehicle-name">ESCALADE</h3>
+          <p class="lineup__vehicle-price">&nbsp;</p>
+          <a href="#" class="lineup__vehicle-link">EXPLORE →</a>
+        </article>
+        <article class="lineup__vehicle">
+          <div class="lineup__vehicle-image-wrap">
+            <img src="ESCALADE 3.png" alt="2024 Escalade" class="lineup__vehicle-image">
+          </div>
+          <span class="lineup__vehicle-year">2024</span>
+          <h3 class="lineup__vehicle-name">ESCALADE</h3>
+          <p class="lineup__vehicle-price">FROM $81,990*</p>
+          <a href="#" class="lineup__vehicle-link">EXPLORE →</a>
+        </article>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
