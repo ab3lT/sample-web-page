@@ -464,23 +464,32 @@ button {
 }
 
 .lineup__tabs {
+  width: 1184px;
   display: flex;
-  justify-content: center;
-  gap: var(--space-md);
+  gap: 0;
   margin-bottom: var(--space-3xl);
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* allow wrapping on small screens */
+  align-items: stretch; /* make tabs equal height */
 }
 
 .lineup__tab {
+  flex: 1 1 0;
+  min-width: 0;
   font-size: 0.625rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   color: var(--color-gray-600);
-  padding: var(--space-sm) var(--space-lg);
-  border: 1px solid var(--color-gray-300);
+  padding: var(--space-sm) 0;
+  border: none;
+  border-right: 1px solid var(--color-gray-300);
   border-radius: 0;
   background-color: transparent;
+  text-align: center;
   transition: all var(--transition-fast);
+}
+
+.lineup__tab:last-child {
+  border-right: none;
 }
 
 .lineup__tab:hover {
