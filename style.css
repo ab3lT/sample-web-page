@@ -566,36 +566,189 @@ button {
 /* ===================================
    Responsive - Tablet (768px - 1024px)
    =================================== */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  :root {
+    --header-height: 58px;
+  }
+  
   .header__nav {
     padding: var(--space-md) var(--space-lg);
   }
   
+  .header__logo-image {
+    height: 36px;
+  }
+  
+  .header__nav-links {
+    gap: var(--space-md);
+  }
+  
+  .header__link {
+    font-size: 0.65rem;
+  }
+  
+  /* Hero tablet */
+  .hero {
+    height: 50vh;
+    min-height: 380px;
+    max-height: 500px;
+  }
+  
+  .hero__content {
+    padding-top: clamp(40px, 8vh, 80px);
+  }
+  
+  .hero__title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    letter-spacing: 0.3em;
+  }
+  
+  .hero__cta {
+    font-size: 0.65rem;
+  }
+  
+  /* Featured tablet */
   .featured__grid {
     gap: 4px;
+  }
+  
+  .featured__card {
+    aspect-ratio: 4 / 3;
   }
   
   .featured__card-content {
     padding: var(--space-lg) var(--space-md);
   }
   
-  .featured__card-title {
-    font-size: var(--text-sm);
+  .featured__card-label {
+    font-size: 0.55rem;
   }
   
-  .lineup__grid {
-    gap: var(--space-md);
+  .featured__card-title {
+    font-size: clamp(0.7rem, 1.5vw, 0.875rem);
+  }
+  
+  /* Offers tablet */
+  .offers {
+    padding: var(--space-2xl) var(--space-lg);
+  }
+  
+  .offers__title {
+    font-size: 0.7rem;
+  }
+  
+  .offers__nav {
+    gap: var(--space-lg);
+  }
+  
+  .offers__nav-link {
+    font-size: 0.65rem;
+  }
+  
+  .offers__card {
+    max-width: 520px;
+    padding: var(--space-xl);
+  }
+  
+  .offers__card-model {
+    font-size: var(--text-base);
   }
   
   .offers__card-pricing {
     gap: var(--space-2xl);
   }
+  
+  .offers__card-amount,
+  .offers__card-months {
+    font-size: var(--text-2xl);
+  }
+  
+  /* Lineup tablet */
+  .lineup {
+    padding: var(--space-3xl) var(--space-lg);
+  }
+  
+  .lineup__title {
+    font-size: 0.75rem;
+  }
+  
+  .lineup__tabs {
+    gap: var(--space-sm);
+    margin-bottom: var(--space-2xl);
+  }
+  
+  .lineup__tab {
+    font-size: 0.55rem;
+    padding: var(--space-xs) var(--space-md);
+  }
+  
+  .lineup__grid {
+    gap: var(--space-md);
+    max-width: 900px;
+  }
+  
+  .lineup__vehicle-image-wrap {
+    aspect-ratio: 16 / 10;
+  }
+  
+  .lineup__vehicle-year {
+    font-size: 0.55rem;
+  }
+  
+  .lineup__vehicle-name {
+    font-size: 0.75rem;
+  }
+  
+  .lineup__vehicle-price {
+    font-size: 0.55rem;
+  }
+  
+  .lineup__vehicle-link {
+    font-size: 0.55rem;
+  }
 }
 
 /* ===================================
-   Responsive - Mobile (≤767px)
+   Responsive - Small Tablet (600px - 767px)
    =================================== */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .featured__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+  }
+  
+  .featured__card {
+    aspect-ratio: 1 / 1;
+  }
+  
+  .featured__card-content {
+    padding: var(--space-md) var(--space-sm);
+  }
+  
+  .featured__card-label {
+    font-size: 0.5rem;
+  }
+  
+  .featured__card-title {
+    font-size: 0.6rem;
+  }
+  
+  .lineup__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+    max-width: 100%;
+    padding: 0 var(--space-sm);
+  }
+  
+  .lineup__vehicle-name {
+    font-size: 0.65rem;
+  }
+}
+
+/* ===================================
+   Responsive - Mobile (≤599px)
+   =================================== */
+@media screen and (max-width: 599px) {
   :root {
     --header-height: 55px;
   }
@@ -681,7 +834,7 @@ button {
   .header__nav {
     padding: var(--space-md) var(--space-2xl);
   }
-
+  
   .hero {
     max-height: 700px;
   }
